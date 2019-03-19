@@ -18,5 +18,5 @@ TODO: Add long description of the pod here.
   s.framework = 'CoreTelephony'
   s.vendored_frameworks = 'Frameworks/pushsdk.framework'
   s.resources = 'Frameworks/pushBudle.bundle'
-  s.libraries = 'stdc++','z','c++'
+  s.libraries = 'stdc++','z','c++'
 end
