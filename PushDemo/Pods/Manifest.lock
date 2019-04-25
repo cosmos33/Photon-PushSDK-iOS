@@ -1,0 +1,16 @@
+PODS:
+  - PhotonPushSDK (0.0.4)
+
+DEPENDENCIES:
+  - PhotonPushSDK (= 0.0.4)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - PhotonPushSDK
+
+SPEC CHECKSUMS:
+  PhotonPushSDK: 6ca7d87bc4b2709442a9b9b1337a9970bc407a80
+
+PODFILE CHECKSUM: 6542b442ce63477032fe79cc8da0fd82a2b635ba
+
+COCOAPODS: 1.5.3

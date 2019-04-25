@@ -1,0 +1,7 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.0'
+project 'PushDemo'
+target :PushDemo do
+    pod 'PhotonPushSDK','0.0.4'
+#    pod 'PhotonPushSDK',:path=>'../../../github_project/PhotonPushSDK-iOS/'
+end
