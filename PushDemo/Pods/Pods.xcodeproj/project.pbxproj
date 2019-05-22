@@ -11,16 +11,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		56A0E33C46940EE1E138F6261E4E4166 /* pushsdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pushsdk.framework; path = Frameworks/pushsdk.framework; sourceTree = "<group>"; };
+		13136F64345BE5FF821F3027D33C3DAD /* pushBudle.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = pushBudle.bundle; path = Frameworks/pushBudle.bundle; sourceTree = "<group>"; };
+		2333D0EDCA27DE435FBA01312ECE993E /* APIEncryption.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIEncryption.framework; path = Products/APIEncryption.framework; sourceTree = "<group>"; };
+		34183DE4118042EBB1FAADE1404A39FD /* pushsdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pushsdk.framework; path = Frameworks/pushsdk.framework; sourceTree = "<group>"; };
 		61B55D414E3996F53A5B195D4A6FE70C /* Pods-PushDemo.inhouse.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PushDemo.inhouse.xcconfig"; sourceTree = "<group>"; };
 		6453C779D800C199400C1113BFB33ED3 /* Pods-PushDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PushDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		826725BCBF19E9B6A8B6DE7963517371 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebP.framework; path = Products/Frameworks/WebP.framework; sourceTree = "<group>"; };
 		8F1EAB4AB438D4DE74659246583B86D9 /* Pods-PushDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PushDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A78FAEE5E740B3B81262DD9B31C2486E /* Pods-PushDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PushDemo-frameworks.sh"; sourceTree = "<group>"; };
+		A7E42AD919341D6205B458910932274D /* MomoCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MomoCrypto.framework; path = Products/MomoCrypto.framework; sourceTree = "<group>"; };
 		B006771269009EA7E852F66747C2991A /* Pods-PushDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PushDemo-resources.sh"; sourceTree = "<group>"; };
-		BEDA7185B38EEE6C176B63537A2BDB61 /* pushBudle.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = pushBudle.bundle; path = Frameworks/pushBudle.bundle; sourceTree = "<group>"; };
 		C5894BD762C9F61FB3E176FA8EB84860 /* libPods-PushDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-PushDemo.a"; path = "libPods-PushDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B561F46478A7182117F400517C6B07 /* Pods-PushDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PushDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D2FE7ED4A772766702F21C9B48067E97 /* MMFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MMFoundation.framework; path = Products/MMFoundation.framework; sourceTree = "<group>"; };
+		E39E495AE4621CEFBFE3D590E5A08408 /* openssl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = openssl.framework; path = Products/Frameworks/openssl.framework; sourceTree = "<group>"; };
 		EC80220E5151A73CB3B86006F6F85D43 /* Pods-PushDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PushDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		F08200292E8A15A33735045C2F827FC0 /* Pods-PushDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PushDemo-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -36,6 +41,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00E4DD284CAB75D9DE787A14557CE0DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2FE7ED4A772766702F21C9B48067E97 /* MMFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0259F655971AA5EF46688FA8A8AA4D36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2333D0EDCA27DE435FBA01312ECE993E /* APIEncryption.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -59,22 +80,12 @@
 			path = "Target Support Files/Pods-PushDemo";
 			sourceTree = "<group>";
 		};
-		46A52300E1093BF7113B610F0C1F2E7C /* PhotonPushSDK */ = {
+		7738EB78139DF68E2DFF36EFD6765C1D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9B88E55F2E650DA7DF96CF0947D46D4C /* Frameworks */,
-				47D4628B055D809D001D3E33D9BD3D4E /* Resources */,
+				34183DE4118042EBB1FAADE1404A39FD /* pushsdk.framework */,
 			);
-			name = PhotonPushSDK;
-			path = PhotonPushSDK;
-			sourceTree = "<group>";
-		};
-		47D4628B055D809D001D3E33D9BD3D4E /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				BEDA7185B38EEE6C176B63537A2BDB61 /* pushBudle.bundle */,
-			);
-			name = Resources;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -82,26 +93,82 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
-				BD887C7B7C8C9895E6DDD87E64262E21 /* Pods */,
+				82A765C1C0279545ECF8877AE3CEB444 /* Pods */,
 				DD473BEC44D66725744AE05632AD8A4E /* Products */,
 				E63990AD83292EB2C17E7D71D58B807B /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		9B88E55F2E650DA7DF96CF0947D46D4C /* Frameworks */ = {
+		82A765C1C0279545ECF8877AE3CEB444 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				56A0E33C46940EE1E138F6261E4E4166 /* pushsdk.framework */,
+				83B9734BCEA173FCD2D908F97069AA20 /* MMFrameworks */,
+				A830802E4B45C9DF4E1020F725A8A407 /* PhotonPushSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		83B9734BCEA173FCD2D908F97069AA20 /* MMFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0C201DFDD6F2C0D51E7BD86763C2C27 /* APIEncryption */,
+				DA453E263A96B7E0F7C94AD07A41547F /* Frameworks */,
+				ED6B8E2561B1BBEB6ABB4E0D8D4CAD9C /* MMFoundation */,
+				BB80DD0059F45CFDE2FFA5709309A9D7 /* MomoCrypto */,
+			);
+			name = MMFrameworks;
+			path = MMFrameworks;
+			sourceTree = "<group>";
+		};
+		A0C201DFDD6F2C0D51E7BD86763C2C27 /* APIEncryption */ = {
+			isa = PBXGroup;
+			children = (
+				0259F655971AA5EF46688FA8A8AA4D36 /* Frameworks */,
+			);
+			name = APIEncryption;
+			sourceTree = "<group>";
+		};
+		A830802E4B45C9DF4E1020F725A8A407 /* PhotonPushSDK */ = {
+			isa = PBXGroup;
+			children = (
+				7738EB78139DF68E2DFF36EFD6765C1D /* Frameworks */,
+				C0D6E33AB8A6E3189F5FAC6CFA355E27 /* Resources */,
+			);
+			name = PhotonPushSDK;
+			path = PhotonPushSDK;
+			sourceTree = "<group>";
+		};
+		BB80DD0059F45CFDE2FFA5709309A9D7 /* MomoCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				FB275CEC935166D3B44BAB0F186E8044 /* Frameworks */,
+			);
+			name = MomoCrypto;
+			sourceTree = "<group>";
+		};
+		C0D6E33AB8A6E3189F5FAC6CFA355E27 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				13136F64345BE5FF821F3027D33C3DAD /* pushBudle.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D48BCE2BDF99913EB9B742A48CD3ABF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E39E495AE4621CEFBFE3D590E5A08408 /* openssl.framework */,
+				826725BCBF19E9B6A8B6DE7963517371 /* WebP.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BD887C7B7C8C9895E6DDD87E64262E21 /* Pods */ = {
+		DA453E263A96B7E0F7C94AD07A41547F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				46A52300E1093BF7113B610F0C1F2E7C /* PhotonPushSDK */,
+				D48BCE2BDF99913EB9B742A48CD3ABF3 /* Frameworks */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		DD473BEC44D66725744AE05632AD8A4E /* Products */ = {
@@ -118,6 +185,22 @@
 				20D5AC1D166C732DD6B8ECF240964F78 /* Pods-PushDemo */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		ED6B8E2561B1BBEB6ABB4E0D8D4CAD9C /* MMFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				00E4DD284CAB75D9DE787A14557CE0DC /* Frameworks */,
+			);
+			name = MMFoundation;
+			sourceTree = "<group>";
+		};
+		FB275CEC935166D3B44BAB0F186E8044 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7E42AD919341D6205B458910932274D /* MomoCrypto.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

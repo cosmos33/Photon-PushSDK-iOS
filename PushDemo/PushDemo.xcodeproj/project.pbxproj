@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32195CDB2289789300957855 /* MDAPICustomRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 32195CDA2289789300957855 /* MDAPICustomRequest.m */; };
 		3270EE2A224CE86E0078BBD6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3270EE29224CE86E0078BBD6 /* libz.tbd */; };
 		32FC7193223A597900EE8797 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FC7192223A597900EE8797 /* AppDelegate.m */; };
 		32FC7196223A597900EE8797 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FC7195223A597900EE8797 /* ViewController.m */; };
@@ -32,6 +33,8 @@
 
 /* Begin PBXFileReference section */
 		1DADF45519205492DA4E7562 /* libPods-PushDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PushDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32195CD92289789300957855 /* MDAPICustomRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDAPICustomRequest.h; sourceTree = "<group>"; };
+		32195CDA2289789300957855 /* MDAPICustomRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDAPICustomRequest.m; sourceTree = "<group>"; };
 		3270EE29224CE86E0078BBD6 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		32FC718E223A597900EE8797 /* PushDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32FC7191223A597900EE8797 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,6 +107,8 @@
 				32FC7192223A597900EE8797 /* AppDelegate.m */,
 				32FC7194223A597900EE8797 /* ViewController.h */,
 				32FC7195223A597900EE8797 /* ViewController.m */,
+				32195CD92289789300957855 /* MDAPICustomRequest.h */,
+				32195CDA2289789300957855 /* MDAPICustomRequest.m */,
 				32FC7197223A597900EE8797 /* Main.storyboard */,
 				32FC719A223A597B00EE8797 /* Assets.xcassets */,
 				32FC719C223A597B00EE8797 /* LaunchScreen.storyboard */,
@@ -297,6 +302,7 @@
 			files = (
 				32FC7196223A597900EE8797 /* ViewController.m in Sources */,
 				32FC71A1223A597B00EE8797 /* main.m in Sources */,
+				32195CDB2289789300957855 /* MDAPICustomRequest.m in Sources */,
 				32FC7193223A597900EE8797 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

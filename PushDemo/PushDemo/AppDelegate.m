@@ -11,6 +11,8 @@
 #include <pushsdk/MoPushManager.h>
 //#import "NSData+MoPushBase64.h"
 //#import "NSString+MoPushBase64.h"
+
+#import <APIEncryption/APIEncryption.h>
 #define APP_ID @"26e61d33cefc4e2cab629715b6aa260f"
 
 @interface AppDelegate ()
@@ -22,6 +24,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // 初始化
+    [[APIEncryption shareInstance] registerAPIKeyType:APISecKeyTypeWowoKey  kVersion:2];
     
     [MoPushManager initSDK: APP_ID];
     [MoPushManager setBuildStat:MOBuildStat_RELEASE];
@@ -51,6 +56,8 @@
                                   otherButtonTitles:nil];
         [alertView show];
     });
+    
+
 }
 
 
