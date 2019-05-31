@@ -9,15 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "CallbackMessage.h"
 
-typedef NS_ENUM(NSInteger, COMMAND) {
-    COMMAND_REGISTER = 1,
-    COMMAND_REGISTER_ALIAS = 2,
-    COMMAND_UNREGISTER  = 3,
-    COMMAND_ALIAS = 4,
-    COMMAND_UNALIAS = 5,
-    COMMAND_VENDOR_REG = 6,
-    COMMAND_LOGOUT = 7
-};
 
 //SDK版本
 #define SDK_VERSION 10000
@@ -105,6 +96,28 @@ typedef NS_ENUM(NSInteger,MOBuildStat) {
  退出
  */
 + (void)logout;
+
+/*
+ token绑定标签
+ */
+
++ (void)setTag:(NSString *)tag;
+
+/*
+ token解绑标签
+ */
++ (void)unTag:(NSString *)tag;
+
+/*
+ 别名绑定标签
+ */
+
++ (void)setTagWithAlias:(NSString *)alias tag:(NSString *)tag;
+
+/*
+ 别名解绑标签
+ */
++ (void)unTagWithAlias:(NSString *)alias tag:(NSString *)tag;
 
 /**
  业务端注册回调的方法
