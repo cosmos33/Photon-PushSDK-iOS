@@ -28,7 +28,7 @@ typedef NS_ENUM(NSInteger,MOBuildStat) {
 @property (nonatomic,weak) id lisenterTarget;
 @property (nonatomic,strong) CallbackMessage *callbackMessage;
 @property (nonatomic, strong, readonly) dispatch_queue_t queue;
-
+@property (nonatomic, assign)NSInteger  insLog;
 /**
  初始化push sdk
  @paramter appID 在服务端申请获得的id
@@ -136,6 +136,7 @@ typedef NS_ENUM(NSInteger,MOBuildStat) {
 + (void)runBlock:(dispatch_block_t)aBlock;
 
 + (void)uploadLog;
+
 @end
 
 NS_ASSUME_NONNULL_END
