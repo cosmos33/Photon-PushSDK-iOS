@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'PhotonPushSDK'
-  s.version          = '0.0.9'
+  s.version          = '0.0.9-hw'
   s.license      = 'MIT'
   s.summary          = 'A short description of PhotonPushSDK'
 
